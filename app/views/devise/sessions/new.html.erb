@@ -1,0 +1,25 @@
+<h2 class="ui center aligned icon header">
+  <i class="circular sticky address card outline inverted  icon"></i>
+ Sign in
+</h2>
+
+<%= form_for :user do |f|  %>
+
+  <div class="ui segment inverted">
+    <%=render 'devise/shared/error_messages', resource: @user %>
+
+    <div class="ui form inverted">
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+      <div class="field">
+        <%= f.label :password %>
+        <%= f.text_field :password, placeholder: 'Password' %>
+      </div>
+      <%= f.submit "Войти", class: 'ui button'%>
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+<% end %>
+

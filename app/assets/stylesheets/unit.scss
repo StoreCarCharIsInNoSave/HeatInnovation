@@ -1,0 +1,137 @@
+// Place all the styles related to the unit controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.unit-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+.unit-solo-handler{
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.unit-wrapper-handler{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.unit-description{
+  word-wrap: break-word;
+}
+.unit-desc-handler{
+  height: 150px !important;
+}
+.unit-image{
+  height: 164px !important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black !important;
+}
+.unit-show-content{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.unit-show-image{
+  height: 300px;
+  border-radius: 15px;
+  border : 3px solid black;
+}
+.description-unit-show{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.unit-data-handler *{
+  font-size: 20px;
+  margin-top: 40px;
+}
+.unit-full-description{
+  word-wrap: break-word;
+}
+.pagination {
+
+  cursor: default;
+  /* self-clearing method: */
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a,
+._pagination span,
+._pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+  border-radius: 10px;
+}
+
+.pagination .disabled {
+  display: none;
+}
+
+.pagination .current {
+
+  font-style: normal;
+  font-weight: bold;
+  background: #0075ff;
+  color: white;
+  border: 1px solid #0074ff;
+  border-radius: 10px;
+  padding: 7px;
+
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #0047ff;
+  margin-top: 2px;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+
+.pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+.pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .pagination {
+  height: 1%;
+}
+
+*:first-child+html .pagination {
+  overflow: hidden;
+}

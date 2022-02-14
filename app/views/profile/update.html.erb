@@ -1,0 +1,39 @@
+<h2 class="ui center aligned icon header">
+  <i class="circular sticky address card outline inverted  icon"></i>
+  Редактировать профиль
+</h2>
+
+<%= form_for :user do |f|  %>
+
+  <div class="ui segment inverted">
+    <%=render 'devise/shared/error_messages', resource: @user %>
+
+    <div class="ui form inverted">
+      <div class="avatar">
+        <% if @user.avatar.attached? %>
+          <%=image_tag(@user.avatar, class: 'avatar')%>
+        <% else %>
+          <%= image_tag('profile.png', class: 'avatar') %>
+        <% end %>
+
+      </div>
+      <div class="field">
+        <%=f.label :avatar %>
+        <%=f.file_field :avatar %>
+      </div>
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+      <div class="field">
+        <%= f.label :password %>
+        <%= f.text_field :password, placeholder: 'Пароль' %>
+      </div>
+      <div class="field">
+        <%= f.label :password_confirmation %>
+        <%= f.text_field :password_confirmation, placeholder: 'Повторите пароль' %>
+      </div>
+      <%= f.submit "Изменить", class: 'ui button'%>
+    </div>
+  </div>
+<% end %>

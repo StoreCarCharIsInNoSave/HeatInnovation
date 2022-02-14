@@ -1,0 +1,33 @@
+@import 'semantic-ui';
+//body{
+//  background-image: url('/assets/background_main.jpg');
+//  background-position: center center;
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//}
+#welcome-segment {
+  display: flex;
+}
+.flexslider{
+  margin-top: 10px !important;
+  border: 3px solid #000000 !important;
+}
+.slider-container{
+  width: 560px !important;
+}
+.slider-center-alignment{
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  position:fixed !important;
+  left:0px !important;
+  bottom:0px !important;
+  height:50px !important;
+  width:100% !important;
+}

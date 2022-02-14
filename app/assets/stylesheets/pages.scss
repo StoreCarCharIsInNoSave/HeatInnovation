@@ -1,0 +1,272 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.date {
+  color: black;
+}
+
+.comment-area {
+  border-radius: 20px !important;
+}
+
+.avatar-img {
+  border: 2px solid white;
+  border-radius: 50% !important;
+}
+
+.avatar-img {
+  width: 75px;
+  height: 75px;
+}
+
+.comment-form {
+  margin-top: 30px;
+}
+
+.buttom-review-actions {
+  display: flex;
+  align-items: center;
+}
+
+.local-rating-handler {
+  margin-left: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.rounded-comment {
+
+  border-radius: 20px;
+  background-color: #b1b1b1;
+  border: 2px solid white;
+  margin-top: 10px;
+  width: 650px;
+}
+
+.Comments-handler {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin-left: 30px !important;
+}
+
+.content {
+  margin-left: 15px !important;
+  margin-top: 5px;
+}
+
+.submit-review-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.comment-text {
+  max-width: 450px;
+}
+
+.review-destroy-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-image {
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.contact-text {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.contact-handler {
+  display: flex;
+  align-items: center;
+
+}
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.contact-map {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.contact-form-map-handler {
+  display: flex;
+
+}
+
+.contact-info-handler {
+  margin-right: 60px;
+}
+
+.map-handler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.administration {
+  width: 35px;
+  height: 35px;
+}
+
+.human-handler {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 500px;
+  padding: 10px;
+  background-color: #a4a4a4;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.human-card-image {
+  width: 100px;
+  height: 100px;
+  right: 50px;
+  top: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.human-type {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin: 0;
+}
+
+.human-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin: 0;
+}
+
+.human-cards-handler {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher {
+  height: 270px;
+}
+
+.star-handler {
+  display: flex;
+  justify-content: space-around;
+}
+
+.star-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student {
+  font-size: 20px;
+}
+
+.story-image {
+  border: 2px solid black;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  width: 550px;
+}
+
+
+.story-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px !important;
+
+  margin: 0;
+}
+
+.news-handler {
+display: flex;
+justify-content: center;
+flex-direction: column;
+  align-items: center;
+}
+
+.news {
+  background-color: white !Important;
+  width: 800px;
+ padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+
+  color: rgb(255, 145, 0);
+}
+.news-text{
+  word-wrap: break-word;
+}
+.news-image{
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
+.image-data{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

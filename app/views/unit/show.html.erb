@@ -1,0 +1,33 @@
+<h2 class="ui center aligned icon header">
+  <i class="circular sticky building outline inverted outline icon"></i>
+ <%= @unit.name %>
+<div>
+  <% if current_user && current_user.admin? %>
+    <%= link_to 'Изменить', unit_edit_path(@unit), class: 'ui orange button' %>
+    <%= link_to 'Удалить', unit_destroy_path(@unit), class: 'ui red button', method: :delete %>
+  <% end %>
+</div>
+</h2>
+<div class="unit-show-content">
+
+  <% if @unit.image.attached? %>
+    <%=image_tag(@unit.image, class: 'unit-show-image')%>
+  <% else %>
+    <%= image_tag('unit-default.png', class: 'unit-show-image') %>
+  <% end %>
+  <div class="unit-data-handler">
+    <ul>
+      <li>Юридический адрес: <%=@unit.address %></li>
+      <li>Глава отделения: <%=@unit.leader %></li>
+      <li>Номер главы отделения: <%=@unit.leader_phone %></li>
+      <li>Номер юридического отдела: <%=@unit.legal_phone %></li>
+    </ul>
+  </div>
+</div>
+<div class="unit-show-content">
+  <h1>Подробное описание отделения</h1>
+</div>
+
+<div class="description-unit-show">
+  <p class="unit-full-description"><%=@unit.big_desc %></p>
+</div>

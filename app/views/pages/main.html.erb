@@ -1,0 +1,22 @@
+
+<div class="welcome-handler">
+  <div class="ui inverted vertical masthead center aligned segment circular" id="welcome-segment">
+    <div class="ui text container">
+
+      <h1 class="ui inverted header">
+        MusicWorld
+      </h1>
+      <h2>Лучшая музыкальная школа</h2>
+
+      <% if user_signed_in? %>
+        <%=link_to 'Оставить коментарий',pages_reviews_path , class: 'ui huge primary button ' %>
+        <%=link_to 'Отделения', unit_index_path, class: 'ui huge primary button ' %>
+      <%else %>
+        <%=link_to 'Отделения', unit_index_path, class: 'ui huge primary button ' %>
+        <%=link_to 'Авторизация',new_user_session_path , class: 'ui huge primary button ' %>
+        <%=link_to 'Регистрация',new_user_registration_path , class: 'ui huge primary button ' %>
+      <%end %>
+    </div>
+  </div>
+</div>
+

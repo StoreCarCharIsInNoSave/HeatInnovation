@@ -1,0 +1,46 @@
+<div class="ui mini menu massive inverted">
+  <%= link_to 'MusicWorld', root_path, class: 'active item' %>
+  <div class="ui dropdown  item">
+    О нас <i class="dropdown icon"></i>
+    <div class="menu">
+      <%=link_to 'Учителя', teachers_path, class: 'item'%>
+      <%=link_to 'Администрация', administration_path, class: 'item'%>
+      <%=link_to 'История', story_path, class: 'item'%>
+      <%=link_to 'Новости', news_path, class: 'item'%>
+    </div>
+  </div>
+
+    <%=link_to 'Контакты', contacts_path, class:'item' %>
+
+
+
+
+    <%= link_to "Отделения", unit_index_path, class: ' item' %>
+
+
+    <%=link_to 'Отзывы', pages_reviews_path, class: 'item'%>
+
+  <div class="right menu">
+    <% unless user_signed_in? %>
+      <div class="item">
+        <%= link_to "Зарегистрироваться", new_user_registration_path, class: 'ui primary button' %>
+      </div>
+      <div class="item">
+        <%= link_to "Войти", new_user_session_path, class: 'ui primary button' %>
+      </div>
+    <% else %>
+      <div class="item">
+        <% if current_user.admin? %>
+          <h1><%=link_to '[Админ] '+current_user.email.split('@')[0], profile_update_path %></h1>
+        <% else %>
+          <h1><%=link_to current_user.email.split('@')[0], profile_update_path %></h1>
+        <% end %>
+      </div>
+      <div class="item">
+        <%= link_to "Деавторизация", destroy_user_session_path, :method => :delete, class: 'ui primary button' %>
+      </div>
+    <% end %>
+
+  </div>
+
+</div>

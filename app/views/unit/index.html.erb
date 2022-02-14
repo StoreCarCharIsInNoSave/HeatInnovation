@@ -1,0 +1,58 @@
+<h2 class="ui center aligned icon header">
+  <i class="circular sticky building outline inverted outline icon"></i>
+  Наши отделения
+  <% if current_user && current_user.admin? %>
+    <div>
+      <%= link_to 'Добавить отделение', unit_new_path, class: 'ui primary button' %>
+    </div>
+  <% end %>
+</h2>
+<div class="unit-wrapper-handler">
+  <div class="unit-wrapper">
+    <% @units.each do |u| %>
+
+      <div class="unit-solo-handler">
+        <div class="ui card">
+          <div class="image">
+            <% if u.image.attached? %>
+              <%= image_tag(u.image, class: 'unit-image') %>
+            <% else %>
+              <%= image_tag('unit-default.png', class: 'unit-image') %>
+            <% end %>
+          </div>
+          <div class="content unit-desc-handler">
+            <a class="header"><%= u.name %></a>
+            <div class="meta">
+              <span class="date"><%= u.created_at.strftime("Created %m/%d/%Y at %I:%M%p") %></span>
+            </div>
+            <div class="unit-description">
+              <%= u.description %>
+            </div>
+          </div>
+          <div class="extra content">
+            <%= link_to 'Открыть', unit_show_path(u), class: 'ui primary button' %>
+            <% if current_user && current_user.admin? %>
+              <%= link_to 'Изменить', unit_edit_path(u), class: 'ui orange button' %>
+              <%= link_to 'Удалить', unit_destroy_path(u), class: 'ui red button', style: 'margin-top:10px', method: :delete %>
+            <% end %>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    <% end %>
+  </div>
+
+</div>
+<div class="unit-show-content">
+  <%= will_paginate @units %>
+</div>
+
+
+
+
+
+
+
