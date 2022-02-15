@@ -4,9 +4,7 @@ class PagesController < ApplicationController
   def main
 
   end
-  def contacts
 
-  end
   def news
 
   end

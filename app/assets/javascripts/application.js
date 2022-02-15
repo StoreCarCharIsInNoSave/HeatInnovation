@@ -28,8 +28,18 @@ $(document).on('turbolinks:load', function () {
         })
     ;
 });
+
+
+
 $(document).on("turbolinks:load", function () {
     $('.flexslider').flexslider();
+
+    $('.right-btn').on('click', function () {
+        $('.flexslider').flexslider('next');
+    });
+    $('.left-btn').on('click', function () {
+        $('.flexslider').flexslider('prev');
+    });
     $(".user-rating").rating();
     $('.local-rating').rating();
     $(".user-rating").rating('disable');

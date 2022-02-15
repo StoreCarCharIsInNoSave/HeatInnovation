@@ -1,0 +1,43 @@
+Arguments: 
+  /home/lain/.nvm/versions/node/v14.16.0/bin/node /home/lain/.nvm/versions/node/v14.16.0/bin/yarn add flex-slider -force
+
+PATH: 
+  /home/lain/.nvm/versions/node/v14.16.0/bin:/home/lain/.rbenv/shims:/home/lain/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lain/Desktop/HeatInnovation/node_modules/.bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/flex-slider: Not found
+      at Request.params.callback [as _callback] (/home/lain/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/home/lain/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/lain/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/lain/.nvm/versions/node/v14.16.0/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "MusicWorld",
+    "private": true,
+    "dependencies": {
+      "slick-carousel": "^1.8.1",
+      "tiny-slider": "^2.9.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
