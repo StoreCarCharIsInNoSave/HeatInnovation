@@ -1,14 +1,13 @@
 <h2 class="ui center aligned icon header">
   <div class="top-slogan-handler">
     <%= image_tag('padlock.png', class:'top-slogan-image') %>
-    <h1 class="slogan">Authorization</h1>
+    <h1 class="slogan">Авторизация</h1>
   </div>
 </h2>
 <div class="login-form">
   <%= form_for :user  do |f| %>
     <div class="ui segment">
       <%=render 'devise/shared/error_messages', resource: @user %>
-
       <div class="ui form ">
         <div class="field">
           <%= f.label :email %>

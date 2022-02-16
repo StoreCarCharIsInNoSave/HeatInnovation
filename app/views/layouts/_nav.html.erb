@@ -34,13 +34,13 @@
     <% else %>
       <div class="item">
         <% if current_user.admin? %>
-          <h1><%=link_to '[Админ] '+current_user.email.split('@')[0], profile_update_path %></h1>
+          <h1 class=""><%=link_to '[Админ] '+current_user.email.split('@')[0], profile_update_path , class:'profile-login'%></h1>
         <% else %>
-          <h1><%=link_to current_user.email.split('@')[0], profile_update_path %></h1>
+          <h1 class=""><%=link_to current_user.email.split('@')[0], profile_update_path, class:'profile-login' %></h1>
         <% end %>
       </div>
       <div class="item">
-        <%= link_to "Деавторизация", destroy_user_session_path, :method => :delete, class: 'ui primary button' %>
+        <%= link_to "Деавторизация", destroy_user_session_path, :method => :delete, class: 'ui secondary button' %>
       </div>
     <% end %>
 

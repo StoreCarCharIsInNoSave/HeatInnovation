@@ -37,6 +37,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.profile-login{
+    text-decoration: none !important;
+    color: #000000;
+}
 
 .flexslider{
     border: 3px solid #c9c9c9 !important;
@@ -241,7 +245,6 @@ body {
     background-color: #25d366 !important;
 }
 .slogan{
-
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
@@ -278,4 +281,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.center-my{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }

@@ -8,6 +8,7 @@ class ProfileController < ApplicationController
     user_exist
     @user = current_user
     if params[:user][:password] == params[:user][:password_confirmation] && current_user.update(user_params)
+      current_user.avatar=params[:user]['Загрузить фото'] if params[:user]['Загрузить фото']
       flash[:notice] = "Профиль обновлен"
       sign_in(current_user, bypass: true)
       redirect_to profile_update_path
@@ -20,7 +21,7 @@ class ProfileController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation, :avatar)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
   def user_exist
