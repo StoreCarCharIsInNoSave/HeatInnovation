@@ -34,7 +34,11 @@
     <% else %>
       <div class="item">
         <% if current_user.admin? %>
-          <h1 class=""><%=link_to '[Админ] '+current_user.email.split('@')[0], profile_update_path , class:'profile-login'%></h1>
+          <h1 class="">
+            <%= image_tag('crown.png', class:'admin-crown') %>
+            <%=link_to current_user.email.split('@')[0], profile_update_path , class:'profile-login admin-profile'%>
+            <%= image_tag('crown.png', class:'admin-crown') %>
+          </h1>
         <% else %>
           <h1 class=""><%=link_to current_user.email.split('@')[0], profile_update_path, class:'profile-login' %></h1>
         <% end %>

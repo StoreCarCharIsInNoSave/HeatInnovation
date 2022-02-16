@@ -38,8 +38,10 @@
 
             <div class="content">
 
-
-                <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y в %I:%M%p") %></span>
+<div class="date-and-time">
+  <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y  %I:%M%p") %></span>
+  <span class="date"><%= r.created_at.strftime("%I:%M%p") %></span>
+</div>
 
 
               <div class="text comment-text">
@@ -48,7 +50,7 @@
               <div class="actions">
 
                 <% if current_user && current_user.admin? %>
-                  <%= link_to 'Удалить', destroy_review_path(r), class: 'ui red button review-destroy-button', method: :delete %>
+                  <%= link_to 'Удалить', destroy_review_path(r), class: 'ui secondary button review-destroy-button', method: :delete %>
                 <% end %>
               </div>
             </div>

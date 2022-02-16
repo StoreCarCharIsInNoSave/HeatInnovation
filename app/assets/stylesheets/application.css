@@ -288,3 +288,16 @@ body {
     justify-content: center !important;
     align-items: center !important;
 }
+.admin-profile{
+    color: red;
+}
+.admin-crown{
+    height: 30px;
+    width: 30px;
+}
+.date-and-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
