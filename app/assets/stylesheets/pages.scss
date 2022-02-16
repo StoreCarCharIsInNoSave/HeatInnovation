@@ -26,6 +26,7 @@
 .buttom-review-actions {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .local-rating-handler {
@@ -36,9 +37,9 @@
 }
 
 .rounded-comment {
-
+  border: 2px solid #252525 !important;
   border-radius: 20px;
-  background-color: #b1b1b1;
+  background-color: rgba(131, 131, 131, 0.32);
   border: 2px solid white;
   margin-top: 10px;
   width: 650px;
@@ -57,8 +58,8 @@
 
 .comment {
   display: flex;
-  align-items: center;
   margin-left: 30px !important;
+  height: 120px;
 }
 
 .content {
@@ -265,6 +266,12 @@ flex-direction: column;
   height: 150px;
 }
 .image-data{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.image-email{
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -60,4 +60,11 @@ $(document).on("turbolinks:load", function () {
     });
 
     $('.ui.dropdown').dropdown();
+
+    $('.clear-comment').on('click', function (event) {
+        $('.comment-area').val('');
+        document.cookie = "rating=" + 0;
+        $('.local-rating').rating('set rating', 0);
+
+    });
 });

@@ -1,13 +1,20 @@
-<h2 class="ui center aligned icon header">
 
   <% if @reviews.any? %>
-    <i class="circular sticky comments inverted outline icon"></i>
-    Наши отзывы
+    <h2 class="ui center aligned icon header">
+      <div class="top-slogan-handler" >
+        <%= image_tag('reviews.png', class:'top-slogan-image') %>
+        <h1 class="slogan" style="margin-left: 15px">Отзывы о нашей компании</h1>
+      </div>
+    </h2>
   <% else %>
-    <i class="circular sticky frown inverted outline icon"></i>
-    Отзывы отсутствуют
+    <h2 class="ui center aligned icon header">
+      <div class="top-slogan-handler" >
+        <%= image_tag('sad.png', class:'top-slogan-image') %>
+        <h1 class="slogan" style="margin-left: 15px">Отзывы отсутствуют</h1>
+      </div>
+    </h2>
   <% end %>
-</h2>
+
 <% if @reviews.any? %>
   <div class="Comments-handler">
     <div class="ui comments huge ">
@@ -15,23 +22,31 @@
         <div class="rounded-comment">
           <div class="comment ">
             <% if r.user.avatar.attached? %>
-              <%= image_tag(r.user.avatar, class: 'avatar-img') %>
+              <div class="image-email">
+                <%= image_tag(r.user.avatar, class: 'avatar-img') %>
+                <%= r.user.email.to_s.split('@')[0] %>
+                <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
+              </div>
             <% else %>
+              <div class="image-email">
               <%= image_tag('profile.png', class: 'avatar-img') %>
+              <%= r.user.email.to_s.split('@')[0] %>
+                <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
+              </div>
             <% end %>
 
 
             <div class="content">
-              <a class="author"><%= r.user.email %></a>
-              <div class="metadata">
-                <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y at %I:%M%p") %></span>
-              </div>
+
+
+                <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y в %I:%M%p") %></span>
+
 
               <div class="text comment-text">
                 <%= r.comment %>
               </div>
               <div class="actions">
-                <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
+
                 <% if current_user && current_user.admin? %>
                   <%= link_to 'Удалить', destroy_review_path(r), class: 'ui red button review-destroy-button', method: :delete %>
                 <% end %>
@@ -47,10 +62,9 @@
 </div>
 
 <% if user_signed_in? %>
-  <h2 class="ui center aligned icon header">
-    <i class="circular sticky linechat inverted outline icon"></i>
-    Оставьте свой отзыв
-  </h2>
+  <h1 class="ui center aligned icon header slogan">
+   Ваше мнение о нашей компании очень важно для нас!
+  </h1>
   <%= form_for :review do |f| %>
 
     <div class="ui reply form comment-form">
@@ -58,7 +72,8 @@
         <%= f.text_area '', class: 'comment-area' %>
       </div>
       <div class="buttom-review-actions">
-        <%= f.button '<div class="ui blue labeled submit icon button"> <i class="icon edit"></i> Создать отзыв</div>'.html_safe, class: 'submit-review-button' %>
+        <%= f.button '<div class="ui blue labeled submit secondary icon button"> <i class="icon edit"></i> Создать отзыв</div>'.html_safe, class: 'submit-review-button' %>
+        <input type="button" value="Очистить" class="ui secondary button clear-comment"/>
         <div class="local-rating-handler">
           <div class="ui massive star rating local-rating" data-max-rating="5"></div>
         </div>
@@ -68,12 +83,14 @@
   <% end %>
   </div>
 <% else %>
-  <h2 class="ui center aligned icon header">
-    Авторизируйтесь, чтобы оставить комментарий
-    <i class="circular sticky lock inverted icon"></i>
-
-  </h2>
+    <h2 class="ui center aligned icon header">
+      <div class="top-slogan-handler" >
+        <%= image_tag('block.png', class:'top-slogan-image') %>
+        <h1 class="slogan" style="margin-left: 15px">Требуется авторизация</h1>
+      </div>
+    </h2>
 <% end %>
 
 </div>
 </div>
+
