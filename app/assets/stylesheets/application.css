@@ -245,6 +245,16 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
+.top-slogan-handler{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+.top-slogan-image{
+    width: 100px;
+    height: 100px;
+}
 @media (max-width: 767px) {
     .social-icons li.title {
         display: block;
@@ -252,6 +262,20 @@ body {
         font-weight: 600
     }
 }
+.segment{
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    max-width: 500px;
+}
+.new_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
