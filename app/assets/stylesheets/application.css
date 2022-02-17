@@ -301,3 +301,25 @@ body {
     align-items: center;
     width: 500px;
 }
+.splitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    border: 2px solid #000000 !important;
+    border-radius: 10px !important;
+    -webkit-box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
+
+
+
+}

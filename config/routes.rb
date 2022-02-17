@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   get 'story/', to: 'pages#story'
   get 'administration/', to: 'pages#administration'
   get 'news/', to: 'pages#news'
+  post 'contacts/', to: 'pages#contacts_send'
 end
