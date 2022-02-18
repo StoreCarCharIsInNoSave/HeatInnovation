@@ -18,6 +18,7 @@
     font-family: Lato;
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 }
+
 body {
     background-image: url("/assets/back.jpg");
     background-repeat: no-repeat;
@@ -32,28 +33,32 @@ body {
 .flex-prev {
     display: none !important;
 }
-.flexslider-container{
+
+.flexslider-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.profile-login{
+
+.profile-login {
     text-decoration: none !important;
     color: #000000;
 }
 
-.flexslider{
+.flexslider {
     border: 3px solid #c9c9c9 !important;
     border-radius: 10px !important;
 
 }
-.flex-control-paging{
+
+.flex-control-paging {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3px !important;
 }
-.viber-logo{
+
+.viber-logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -61,6 +66,7 @@ body {
     padding: 1px;
 
 }
+
 .site-footer {
     background-color: #ffffff;
     padding: 10px 0 0px;
@@ -73,13 +79,16 @@ body {
     height: 100px !important;
     width: 100% !important;
 }
-.right-btn{
+
+.right-btn {
     cursor: pointer;
 }
-.left-btn{
+
+.left-btn {
     cursor: pointer;
 }
-.footer-data{
+
+.footer-data {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -94,7 +103,8 @@ body {
 .site-footer hr.small {
     margin: 20px 0
 }
-.footer-icons-handler{
+
+.footer-icons-handler {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +169,6 @@ body {
 }
 
 
-
 @media (max-width: 767px) {
     .site-footer {
         padding-bottom: 0
@@ -205,6 +214,7 @@ body {
     -o-transition: all .2s linear;
     transition: all .2s linear;
 }
+
 .social-icons a:hover {
     color: #000000 !important;
 }
@@ -244,20 +254,24 @@ body {
 .whatsapp:hover {
     background-color: #25d366 !important;
 }
-.slogan{
+
+.slogan {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
-.top-slogan-handler{
+
+.top-slogan-handler {
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: center;
 }
-.top-slogan-image{
+
+.top-slogan-image {
     width: 100px;
     height: 100px;
 }
+
 @media (max-width: 767px) {
     .social-icons li.title {
         display: block;
@@ -265,61 +279,74 @@ body {
         font-weight: 600
     }
 }
-.segment{
+
+.segment {
     border: 2px solid #000000 !important;
     border-radius: 10px !important;
     max-width: 500px;
 }
-.new_user{
+
+.new_user {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.login-form{
+.login-form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.center-my{
+.center-my {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
-.admin-profile{
+
+.admin-profile {
     color: red;
 }
-.admin-crown{
+
+.admin-crown {
     height: 30px;
     width: 30px;
 }
-.date-and-time{
+
+.delete-answer {
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+}
+
+.date-and-time {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 500px;
 }
-.splitter{
+
+.splitter {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.col{
+
+.col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.map{
+
+.map {
     border: 2px solid #000000 !important;
     border-radius: 10px !important;
     -webkit-box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: -9px 11px 8px 0px rgba(34, 60, 80, 0.2);
-
 
 
 }

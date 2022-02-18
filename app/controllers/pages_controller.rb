@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :user_authorized?, only: [:new_review, :contacts_send]
+  before_action :user_authorized?, only: [:new_review, :contacts_send, :questions, :destroy_question]
   before_action :user_admin?, only: [:destroy]
 
   def main
@@ -12,6 +12,25 @@ class PagesController < ApplicationController
 
   def contacts
     @question = Question.new
+  end
+
+  def destroy_question
+    @question = Question.find(params[:id])
+    unless @question.user==current_user
+      flash[:alert] = "Что-бы удалить вопрос, вы должны быть его автором"
+      return
+    end
+    if @question.destroy
+      flash[:notice] = "Ответ успешно удален"
+      redirect_to questions_path
+    else
+      flash[:alert] = "Ошибка удаления ответа"
+      redirect_to questions_path
+    end
+  end
+
+  def questions
+    @questions = Question.where(status: 'answered', user_id: current_user.id)
   end
 
   def contacts_send
@@ -57,7 +76,7 @@ class PagesController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:title, :body)
+    params.require(:question).permit( :body)
   end
 
   def user_authorized?

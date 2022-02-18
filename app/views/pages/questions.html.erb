@@ -1,0 +1,26 @@
+<% if @questions.empty? %>
+  <h2 class="ui center aligned icon header">
+    <div class="top-slogan-handler">
+      <%= image_tag('sad.png', class: 'top-slogan-image') %>
+      <h1 class="slogan" style="margin-left: 15px">Ответов не найдено</h1>
+    </div>
+  </h2>
+
+<% else %>
+<div class="center-my col">
+  <h2 class="ui center aligned icon header">
+    <div class="top-slogan-handler">
+      <%= image_tag('conversation.png', class: 'top-slogan-image') %>
+      <h1 class="slogan" style="margin-left: 15px">Список ответов на ваши вопросы</h1>
+    </div>
+  </h2>
+  <% @questions.each do |question| %>
+    <div class="answer-handler">
+      <%=image_tag('ask.png', class: 'ask-image') %>
+      <b class="slogan question-body"><%=question.body %></b>
+      <div class="answer-text-container"><i class="answer-text"><%=question.answer %></i></div>
+      <%=link_to "Удалить",destroy_question_path(question), class:'ui button secondary delete-answer', method: :delete  %>
+    </div>
+  <% end %>
+</div>
+<% end %>

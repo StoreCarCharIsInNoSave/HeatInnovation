@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   get 'administration/', to: 'pages#administration'
   get 'news/', to: 'pages#news'
   post 'contacts/', to: 'pages#contacts_send'
+  get 'questions', to: 'pages#questions'
+  delete 'questions/destroy/:id', to: 'pages#destroy_question', as: 'destroy_question'
 end

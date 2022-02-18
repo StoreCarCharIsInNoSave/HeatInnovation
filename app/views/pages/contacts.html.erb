@@ -45,13 +45,10 @@
 
         <div class="ui form ">
           <% if signed_in? %>
-            <div class="field">
-              <%= f.label 'Заголовок' %>
-              <%= f.text_field :title, placeholder: 'Заголовок', class: 'data-input' %>
-            </div>
+
             <div class="field">
               <%= f.label 'Вопрос' %>
-              <%= f.text_field :body, placeholder: 'Вопрос', class: 'data-input' %>
+              <%= f.text_area :body, placeholder: '', class: 'data-input' %>
             </div>
 
             <%= f.submit "Отправить", class: 'ui button secondary' %>

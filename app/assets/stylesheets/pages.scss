@@ -128,10 +128,42 @@
 
 .contact-info-handler {
   margin-left: 60px;
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.answer-handler {
+  border: 2px solid #9fa9b5;
+  width: 400px;
+  height: 150px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.question-body {
+  word-break: break-word;
+
+}
+
+.answer-text {
+  word-break: break-word;
+
+}
+.answer-text-container{
+  margin-top: 10px;
+  color: rgb(70, 70, 70);
+}
+
+.ask-image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -40px;
+  top: 10px;
 }
 
 .map-handler {
@@ -238,22 +270,23 @@ display: flex;
 }
 
 .news-handler {
-display: flex;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .news {
   background-color: white !Important;
   width: 800px;
- padding: 10px;
+  padding: 10px;
   border: 2px solid black;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
 .news-title {
   font-size: 20px;
   font-weight: bold;
@@ -261,22 +294,26 @@ flex-direction: column;
 
   color: rgb(255, 145, 0);
 }
-.news-text{
+
+.news-text {
   word-wrap: break-word;
 }
-.news-image{
+
+.news-image {
   border: 2px solid black;
   border-radius: 20px;
   width: 150px;
   height: 150px;
 }
-.image-data{
+
+.image-data {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.image-email{
+
+.image-email {
   display: flex;
   justify-content: center;
   flex-direction: column;
