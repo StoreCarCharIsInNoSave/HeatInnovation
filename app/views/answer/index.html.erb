@@ -1,0 +1,40 @@
+<h2 class="ui center aligned icon header">
+  <div class="top-slogan-handler">
+    <%= image_tag('request.png', class: 'top-slogan-image') %>
+    <h1 class="slogan" style="margin-left: 15px">Вопросы от пользователей</h1>
+  </div>
+</h2>
+<div class="center-my ">
+  <div class="ui cards col">
+    <% @questions.each do |question| %>
+      <%= form_for(:question, :html => {:class => 'card'}) do |f| %>
+        <div class="content">
+          <% if question.user.avatar.attached? %>
+            <%= image_tag(question.user.avatar, class: 'right floated mini ui image') %>
+          <% else %>
+            <%= image_tag('profile.png', class: 'right floated mini ui image') %>
+          <% end %>
+          <div class="header">
+            <%= question.user.email.split('@')[0] %>
+          </div>
+          <div class="meta">
+            <%= question.created_at.strftime("Создан %m/%d/%Y  %I:%M%p") %>
+          </div>
+          <div class="description question-text">
+            <%= question.body %>
+          </div>
+        </div>
+        <div class="ui input answer-input-handler ">
+          <%= f.text_field :answer, class: 'answer-input', placeholder: 'Ответ' %>
+          <%= f.hidden_field :question_id, value: question.id %>
+        </div>
+        <div class="extra content answer-content">
+          <div class="ui two buttons">
+            <%= f.submit "Ответить", class: 'ui basic green button'%>
+            <%= link_to "Удалить", destroy_question_path(question), class: 'ui basic red button', method: :delete %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

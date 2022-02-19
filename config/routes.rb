@@ -22,4 +22,7 @@ Rails.application.routes.draw do
   post 'contacts/', to: 'pages#contacts_send'
   get 'questions', to: 'pages#questions'
   delete 'questions/destroy/:id', to: 'pages#destroy_question', as: 'destroy_question'
+  get 'answers', to: 'answer#index'
+
+  post 'answers', to: 'answer#create', as: 'create_answer'
 end

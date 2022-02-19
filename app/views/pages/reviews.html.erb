@@ -1,19 +1,18 @@
-
-  <% if @reviews.any? %>
-    <h2 class="ui center aligned icon header">
-      <div class="top-slogan-handler" >
-        <%= image_tag('reviews.png', class:'top-slogan-image') %>
-        <h1 class="slogan" style="margin-left: 15px">Отзывы о нашей компании</h1>
-      </div>
-    </h2>
-  <% else %>
-    <h2 class="ui center aligned icon header">
-      <div class="top-slogan-handler" >
-        <%= image_tag('sad.png', class:'top-slogan-image') %>
-        <h1 class="slogan" style="margin-left: 15px">Отзывы отсутствуют</h1>
-      </div>
-    </h2>
-  <% end %>
+<% if @reviews.any? %>
+  <h2 class="ui center aligned icon header">
+    <div class="top-slogan-handler">
+      <%= image_tag('reviews.png', class: 'top-slogan-image') %>
+      <h1 class="slogan" style="margin-left: 15px">Отзывы о нашей компании</h1>
+    </div>
+  </h2>
+<% else %>
+  <h2 class="ui center aligned icon header">
+    <div class="top-slogan-handler">
+      <%= image_tag('sad.png', class: 'top-slogan-image') %>
+      <h1 class="slogan" style="margin-left: 15px">Отзывы отсутствуют</h1>
+    </div>
+  </h2>
+<% end %>
 
 <% if @reviews.any? %>
   <div class="Comments-handler">
@@ -29,8 +28,8 @@
               </div>
             <% else %>
               <div class="image-email">
-              <%= image_tag('profile.png', class: 'avatar-img') %>
-              <%= r.user.email.to_s.split('@')[0] %>
+                <%= image_tag('profile.png', class: 'avatar-img') %>
+                <%= r.user.email.to_s.split('@')[0] %>
                 <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
               </div>
             <% end %>
@@ -38,10 +37,10 @@
 
             <div class="content">
 
-<div class="date-and-time">
-  <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y  %I:%M%p") %></span>
-  <span class="date"><%= r.created_at.strftime("%I:%M%p") %></span>
-</div>
+              <div class="date-and-time">
+                <span class="date"><%= r.created_at.strftime("Отправлено %m/%d/%Y ") %></span>
+                <span class="date"><%= r.created_at.strftime("%I:%M%p") %></span>
+              </div>
 
 
               <div class="text comment-text">
@@ -65,7 +64,7 @@
 
 <% if user_signed_in? %>
   <h1 class="ui center aligned icon header slogan">
-   Ваше мнение о нашей компании очень важно для нас!
+    Ваше мнение о нашей компании очень важно для нас!
   </h1>
   <%= form_for :review do |f| %>
 
@@ -85,12 +84,12 @@
   <% end %>
   </div>
 <% else %>
-    <h2 class="ui center aligned icon header">
-      <div class="top-slogan-handler" >
-        <%= image_tag('block.png', class:'top-slogan-image') %>
-        <h1 class="slogan" style="margin-left: 15px">Требуется авторизация</h1>
-      </div>
-    </h2>
+  <h2 class="ui center aligned icon header">
+    <div class="top-slogan-handler">
+      <%= image_tag('block.png', class: 'top-slogan-image') %>
+      <h1 class="slogan" style="margin-left: 15px">Требуется авторизация</h1>
+    </div>
+  </h2>
 <% end %>
 
 </div>

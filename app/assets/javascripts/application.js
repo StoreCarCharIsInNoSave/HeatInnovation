@@ -67,4 +67,9 @@ $(document).on("turbolinks:load", function () {
         $('.local-rating').rating('set rating', 0);
 
     });
+
+
+    $('.answer-button').on('click', function (event) {
+        console.log('click')
+    });
 });

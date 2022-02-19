@@ -142,8 +142,16 @@
   border-radius: 5px;
   position: relative;
   margin-top: 15px;
+  background-color: white;
 }
-
+.area-answer{
+  width: 150px;
+  height: 60px;
+  resize: none !important;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
 .question-body {
   word-break: break-word;
 
@@ -152,6 +160,9 @@
 .answer-text {
   word-break: break-word;
 
+}
+.card{
+  margin-bottom: 20px !important;
 }
 .answer-text-container{
   margin-top: 10px;
@@ -318,4 +329,20 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+.answer-input-handler{
+width: 100% !important;
+}
+.answer-input{
+  border-bottom: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-radius: 0px !important;
+}
+.answer-form{
+  min-width: 100% !important;
+}
+.answer-content{
+  margin: 0 !important;
+
 }
