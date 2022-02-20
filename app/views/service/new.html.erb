@@ -1,0 +1,41 @@
+<h2 class="ui center aligned icon header">
+  <i class="circular sticky address card outline inverted  icon"></i>
+  Добавить отделение
+</h2>
+
+<div class="center-my ">
+  <%= form_for :service do |f|  %>
+
+    <div class="ui segment profile ">
+      <%=render 'devise/shared/error_messages', resource: @service %>
+
+      <div class="ui form ">
+        <div class="avatar-handler">
+            <%= image_tag('ser.png', class: 'avatar-serv') %>
+        </div>
+        <div class="field">
+          <%=f.label 'Загрузить фото', class:'ui secondary button pick-image-button' %>
+          <label for="">
+          <span style="display: none">
+             <%=f.file_field 'Загрузить фото'%>
+          </span>
+          </label>
+        </div>
+        <div class="field">
+          <%= f.label 'Название' %>
+          <%= f.text_field :name, placeholder: 'Название', class:'data-input'  %>
+        </div>
+        <div class="field">
+          <%= f.label "Описание" %>
+          <%= f.text_field :description, placeholder: 'Описание', class:'data-input'  %>
+        </div>
+        <div class="field">
+          <%= f.label "Стоимость" %>
+          <%= f.text_field :price, placeholder: 'Стоимость', class:'data-input'  %>
+        </div>
+        <%= f.submit "Создать
+", class: 'ui button secondary'%>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -25,4 +25,8 @@ Rails.application.routes.draw do
   get 'answers', to: 'answer#index'
 
   post 'answers', to: 'answer#create', as: 'create_answer'
+  get 'services/', to: 'service#index'
+  get 'services/new', to: 'service#new'
+  delete 'services/destroy/:id', to: 'service#destroy', as: 'destroy_service'
+  post 'services/new', to: 'service#create'
 end
