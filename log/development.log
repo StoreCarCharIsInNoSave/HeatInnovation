@@ -44534,3 +44534,2009 @@ Processing by ServiceController#create as HTML
 Completed 200 OK in 117ms (Views: 92.2ms | ActiveRecord: 12.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:52:11 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (507.3ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 648ms (Views: 642.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:52:15 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-21 19:52:45 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 83.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-21 19:52:49 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-21 19:52:50 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-02-21 19:53:12 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1+SGoaaQQE0hDkPZf72FxjRhvy9xrK2r1ZiPcEbx1UcxVD50sjlovCyqN+SQdunr1OR+gGTEfkX03lOt0qEN5w==", "user"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Зарегистрироваться"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "admin@gmail.com"], ["encrypted_password", "$2a$12$QjyTqQbhqj01b3xiV27XkOVWwuw.nd5gL5llukJ3ffkm0msBxGhtq"], ["created_at", "2022-02-21 16:53:12.257221"], ["updated_at", "2022-02-21 16:53:12.257221"]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:53:12 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (3.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 19:53:32 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 91ms (Views: 75.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:53:36 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 70ms (Views: 63.0ms | ActiveRecord: 4.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2022-02-21 19:53:41 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"96mM101OAhb6YlYfCOjfNXZaM4Uopa6gG04tBFuOaSChY8IfE7td70tqv3vvgjeb6foa2R8p/QFPVjdq98vnwA=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:53:41 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 19:53:42 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered pages/contacts.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:53:42 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  Rendered pages/reviews.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-21 19:53:54 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-02-21 19:53:59 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j8e5KTZU/kdWH6k2co5xHlyK8+g2DNUx/1fheQCoyYlbv9HRW8SpFjstuLVXbSSIUMFanp2MGPosPxOEGzW+5A==", "user"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 205ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:53:59 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:54:01 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:54:21 +0300
+Processing by PagesController#new_review as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YqppB3DyE9QraeYrIx4gPLJSgRiJcJ6lY9jKUBoXu7OAWHElkJAHKy73OkR+cpQ/l+OUdCXM3O+YhVQe1MnZSg==", "review"=>["отличный сервис, работать было очень приятно"], "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pages_controller.rb:67
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("mark", "comment", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["mark", 4], ["comment", "отличный сервис, работать было очень приятно"], ["user_id", 2], ["created_at", "2022-02-21 16:54:21.635610"], ["updated_at", "2022-02-21 16:54:21.635610"]]
+  ↳ app/controllers/pages_controller.rb:67
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pages_controller.rb:67
+Redirected to http://localhost:3000/pages/reviews
+Completed 302 Found in 37ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:54:21 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/pages/reviews.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:51
+  Rendered pages/reviews.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 70ms (Views: 64.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 19:54:36 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 79ms (Views: 76.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/profile/update" for 127.0.0.1 at 2022-02-21 19:54:54 +0300
+Processing by ProfileController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BqxMvOteg/JX+IaPQA5MbKTSqQaG4lwVwGb4XCVuHK2xWxQ3+Ee19aOcG3unIZtKnnT7ZIQGROFQWD+RpNlXzA==", "user"=>{"Загрузить фото"=>#<ActionDispatch::Http::UploadedFile:0x00007f8d71158988 @tempfile=#<Tempfile:/tmp/RackMultipart20220221-5525-194x1l6.jpeg>, @original_filename="prep4.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[\xD0\x97\xD0\xB0\xD0\xB3\xD1\x80\xD1\x83\xD0\xB7\xD0\xB8\xD1\x82\xD1\x8C \xD1\x84\xD0\xBE\xD1\x82\xD0\xBE]\"; filename=\"prep4.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "email"=>"admin@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Изменить"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+Unpermitted parameter: :Загрузить фото
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/profile_controller.rb:10
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["encrypted_password", "$2a$12$ZAHpSkNuLnVqbhumji0tv.9zVSq8/w4NHfUHQSQht/E4SDNNmlYU."], ["updated_at", "2022-02-21 16:54:54.625398"], ["id", 2]]
+  ↳ app/controllers/profile_controller.rb:10
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/profile_controller.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:11
+[36m  Disk Storage (2.3ms) [0m[32mUploaded file to key: 5Us8TvKN5ryXnatdB2WUbPLx (checksum: hWy20WWSDEyjESIcqFvmhg==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[36mActiveStorage::Blob Create (1.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "5Us8TvKN5ryXnatdB2WUbPLx"], ["filename", "prep4.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 474358], ["checksum", "hWy20WWSDEyjESIcqFvmhg=="], ["created_at", "2022-02-21 16:54:54.655057"]]
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[36mActiveStorage::Attachment Create (1.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "User"], ["record_id", 2], ["blob_id", 2], ["created_at", "2022-02-21 16:54:54.666144"]]
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1 WHERE "users"."id" = $2[0m  [["updated_at", "2022-02-21 16:54:54.668599"], ["id", 2]]
+  ↳ app/controllers/profile_controller.rb:11
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/profile_controller.rb:11
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 4a0e9a75-000e-452f-961e-3ccb3399fcaf) to Async(default) with arguments: #<GlobalID:0x00007f8d71602038 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/2>>
+DEPRECATION WARNING: [Devise] bypass option is deprecated and it will be removed in future version of Devise.
+Please use bypass_sign_in method instead.
+Example:
+
+  bypass_sign_in(user)
+ (called from edit at /home/lain/Desktop/HeatInnovation/app/controllers/profile_controller.rb:13)
+Redirected to http://localhost:3000/profile/update
+Completed 302 Found in 262ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 19:54:54 +0300
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf] Performing ActiveStorage::AnalyzeJob (Job ID: 4a0e9a75-000e-452f-961e-3ccb3399fcaf) from Async(default) with arguments: #<GlobalID:0x00007f8d7161ceb0 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf] [36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: 5Us8TvKN5ryXnatdB2WUbPLx[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ProfileController#update as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [4a0e9a75-000e-452f-961e-3ccb3399fcaf] Performed ActiveStorage::AnalyzeJob (Job ID: 4a0e9a75-000e-452f-961e-3ccb3399fcaf) from Async(default) in 7.46ms
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9256d5144765fc27a1cce6bdebe2f8fd10f99b9/prep4.jpeg" for 127.0.0.1 at 2022-02-21 19:54:54 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9256d5144765fc27a1cce6bdebe2f8fd10f99b9", "filename"=>"prep4"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: 5Us8TvKN5ryXnatdB2WUbPLx (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNjo1OTo1NC44NzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--905bf701f7e04f2243259d4af6936f4bdc90341a/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNjo1OTo1NC44NzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--905bf701f7e04f2243259d4af6936f4bdc90341a/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNjo1OTo1NC44NzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--905bf701f7e04f2243259d4af6936f4bdc90341a/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg" for 127.0.0.1 at 2022-02-21 19:54:54 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"prep4.jpeg\"; filename*=UTF-8''prep4.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNjo1OTo1NC44NzNaIiwicHVyIjoiYmxvYl9rZXkifX0=--905bf701f7e04f2243259d4af6936f4bdc90341a", "filename"=>"prep4"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:54:57 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 74.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:54:58 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/pages/reviews.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:51
+  Rendered pages/reviews.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:55:06 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 19:55:17 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2022-02-21 19:55:32 +0300
+Processing by PagesController#contacts_send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kjYCBkyrMFWxTac9Jf2V5nTeNYHPxJm/pFsXs9tqTkYp7uBn7eXBVIgAQI98K1DdwjMQ9KjmTU3kwnpNamSNow==", "question"=>{"body"=>"Как я могу заказать покраску забора?"}, "commit"=>"Отправить"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pages_controller.rb:40
+  [1m[36mQuestion Create (7.1ms)[0m  [1m[32mINSERT INTO "questions" ("body", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "Как я могу заказать покраску забора?"], ["status", "waiting"], ["user_id", 2], ["created_at", "2022-02-21 16:55:32.128672"], ["updated_at", "2022-02-21 16:55:32.128672"]]
+  ↳ app/controllers/pages_controller.rb:40
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pages_controller.rb:40
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 14ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 19:55:32 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:55:34 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-21 19:55:38 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-02-21 19:55:50 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mawv2PdQdSHm3qX4Q6rFXq7QVz0kM6HHjOJRe+mWOmgWAIHQp2eSuLFty8LZPeCrjbF7SqjB8MQzFpdDEAoxFw==", "user"=>{"email"=>"user@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Зарегистрироваться"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "user@gmail.com"], ["encrypted_password", "$2a$12$IDsNx8uYLyiSomxxCeRU9uf3JqY4wRs7a/MnsoKoFVQktoLCKp8d."], ["created_at", "2022-02-21 16:55:50.522169"], ["updated_at", "2022-02-21 16:55:50.522169"]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 206ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:55:50 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "is_admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["is_admin", true], ["updated_at", "2022-02-21 16:56:55.697018"], ["id", 3]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:56:57 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "is_admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["is_admin", false], ["updated_at", "2022-02-21 16:57:04.383580"], ["id", 3]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:57:05 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "is_admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["is_admin", true], ["updated_at", "2022-02-21 16:57:08.736239"], ["id", 3]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2022-02-21 19:57:10 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 19:57:13 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/answer/index.html.erb:12
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/answer/index.html.erb:12
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/answer/index.html.erb:12
+  Rendered answer/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 89ms (Views: 83.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9256d5144765fc27a1cce6bdebe2f8fd10f99b9/prep4.jpeg" for 127.0.0.1 at 2022-02-21 19:57:13 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d9256d5144765fc27a1cce6bdebe2f8fd10f99b9", "filename"=>"prep4"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 5Us8TvKN5ryXnatdB2WUbPLx (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg" for 127.0.0.1 at 2022-02-21 19:57:13 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"prep4.jpeg\"; filename*=UTF-8''prep4.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860", "filename"=>"prep4"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2022-02-21 19:58:27 +0300
+Processing by AnswerController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sq73EVfdM045zAbU2EgaakCKec8zM16g4Ydbr/tfbrRLpsDTkmGjgkveU+L0Ief2mjS05nycp1jVBiZPNS4BOg==", "question"=>{"answer"=>"Привет, это ещё не реализованно.", "question_id"=>"1"}, "commit"=>"Ответить"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[36mQuestion Update (0.4ms)[0m  [1m[33mUPDATE "questions" SET "answer" = $1, "status" = $2, "updated_at" = $3 WHERE "questions"."id" = $4[0m  [["answer", "Привет, это ещё не реализованно."], ["status", "answered"], ["updated_at", "2022-02-21 16:58:27.372547"], ["id", 1]]
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/answer_controller.rb:11
+Redirected to http://localhost:3000/answers
+Completed 302 Found in 11ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 19:58:27 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  Rendered answer/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:58:32 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2[0m  [["status", "answered"], ["user_id", 2]]
+  ↳ app/views/pages/questions.html.erb:17
+  Rendered pages/questions.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 62ms (Views: 57.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/questions/destroy/1" for 127.0.0.1 at 2022-02-21 19:58:53 +0300
+Processing by PagesController#destroy_question as HTML
+  Parameters: {"authenticity_token"=>"seX2/11mPEEK8JTcvXU8RXY27Lm4jEpD/jiiYvoWTzAF/emHeltjUDSsr0cs38JJa7K8EFE1xTWcUUgY1qWkgA==", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pages_controller.rb:23
+  [1m[36mQuestion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/pages_controller.rb:23
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pages_controller.rb:23
+Redirected to http://localhost:3000/questions
+Completed 302 Found in 16ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:58:53 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 68.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:59:07 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/pages/reviews.html.erb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:51
+  Rendered pages/reviews.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860/prep4.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22prep4.jpeg%22%3B+filename%2A%3DUTF-8%27%27prep4.jpeg" for 127.0.0.1 at 2022-02-21 19:59:08 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"prep4.jpeg\"; filename*=UTF-8''prep4.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWROVlZ6T0ZSMlMwNDFjbmxZYm1GMFpFSXlWMVZpVUV4NEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGljSEpsY0RRdWFuQmxaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuY0hKbGNEUXVhbkJsWndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMi0wMi0yMVQxNzowMjoxMy45ODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a610c8fbb2f6a130f7b209dceff8754f2c549860", "filename"=>"prep4"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/pages/destroy/2" for 127.0.0.1 at 2022-02-21 19:59:10 +0300
+Processing by PagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BUqpxk/RG3/9WzaoZ+kKUZjn95zIpHDnQGTQEYbRsuWgMAwUEuuqxlTKe8s9xkr27oPWfUIAqDuofKrOvoCZvg==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:90
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pages_controller.rb:55
+  [1m[36mReview Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/pages_controller.rb:55
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pages_controller.rb:55
+Redirected to http://localhost:3000/pages/reviews
+Completed 302 Found in 11ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:59:11 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 19:59:12 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:59:13 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 19:59:14 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  Rendered answer/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 19:59:14 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 19:59:15 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 19:59:30 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.7ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 98ms (Views: 82.7ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--26b5c01d2aebb345c12eae13e37a2897776d980d/dota.jpg" for 127.0.0.1 at 2022-02-21 19:59:30 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--26b5c01d2aebb345c12eae13e37a2897776d980d", "filename"=>"dota"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: JmG4hLaa2YbykWZf8kQFaVsG (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 19:59:30 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430", "filename"=>"dota"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 19:59:38 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered service/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 83ms (Views: 75.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:00:00 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3vE3/wvlVTCrMnhgc2cMiLEdLDuWplxMr3/43va9b2R6QoowI3t7MbTmNAEayATAns9C4WpJTw2Y2fg66Vpoag==", "service"=>{"name"=>"Закопать труп", "description"=>"Отвезём и зароем труп за вас", "price"=>"10$"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/service_controller.rb:24
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered service/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 79ms (Views: 72.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:00:32 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zBv+zeWvQO1q+ITlzJKT/CVKy5KvGwTi2NpK5yf4UolpYVsfuJXxVMNpyYaWvdNbUy7qcyW/3D4wwjA4H6l50g==", "service"=>{"name"=>"Закопать труп в лесу", "description"=>"Отвезём и зароем труп за вас", "price"=>"-1"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/service_controller.rb:24
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered service/new.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 80ms (Views: 74.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:00:43 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mxgOQ2ec3yFv+H7dEtnunZih+AaH+VGz+jVqW57yBUY+YquROqZumMZpM75I9q467sXZ5w1diW8SLRCEpqMuHQ==", "service"=>{"Загрузить фото"=>#<ActionDispatch::Http::UploadedFile:0x00007f8d71242ce0 @tempfile=#<Tempfile:/tmp/RackMultipart20220221-5525-1wkwpv0.jpg>, @original_filename="kids.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"service[\xD0\x97\xD0\xB0\xD0\xB3\xD1\x80\xD1\x83\xD0\xB7\xD0\xB8\xD1\x82\xD1\x8C \xD1\x84\xD0\xBE\xD1\x82\xD0\xBE]\"; filename=\"kids.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"Закопать труп в лесу", "description"=>"Отвезём и зароем труп за вас", "price"=>"10"}, "commit"=>"Создать\r\n"}
+Unpermitted parameter: :Загрузить фото
+[36m  Disk Storage (2.2ms) [0m[32mUploaded file to key: p6ohuW585u1WcQqpLPJbQMQe (checksum: sAdaltKraH4iS+r9lYTwMA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:23
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "p6ohuW585u1WcQqpLPJbQMQe"], ["filename", "kids.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 463333], ["checksum", "sAdaltKraH4iS+r9lYTwMA=="], ["created_at", "2022-02-21 17:00:43.162001"]]
+  ↳ app/controllers/service_controller.rb:23
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Закопать труп в лесу"], ["description", "Отвезём и зароем труп за вас"], ["price", 10], ["created_at", "2022-02-21 17:00:43.173323"], ["updated_at", "2022-02-21 17:00:43.173323"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mActiveStorage::Attachment Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Service"], ["record_id", 17], ["blob_id", 3], ["created_at", "2022-02-21 17:00:43.175824"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Update (0.5ms)[0m  [1m[33mUPDATE "services" SET "updated_at" = $1 WHERE "services"."id" = $2[0m  [["updated_at", "2022-02-21 17:00:43.178172"], ["id", 17]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 6f1f7e92-d158-4e5a-939a-7a18b7db86d2) to Async(default) with arguments: #<GlobalID:0x00007f8d714497a0 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/3>>
+Redirected to http://localhost:3000/services
+Completed 302 Found in 29ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:00:43 +0300
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2] Performing ActiveStorage::AnalyzeJob (Job ID: 6f1f7e92-d158-4e5a-939a-7a18b7db86d2) from Async(default) with arguments: #<GlobalID:0x00007f8d714c6ed0 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/3>>
+Processing by ServiceController#index as HTML
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2] [36m  Disk Storage (2.6ms) [0m[34mDownloaded file from key: p6ohuW585u1WcQqpLPJbQMQe[0m
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 17], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2] Skipping image analysis because the mini_magick gem isn't installed
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (26.2ms)
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   [1m[36mActiveStorage::Blob Update (1.2ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [6f1f7e92-d158-4e5a-939a-7a18b7db86d2] Performed ActiveStorage::AnalyzeJob (Job ID: 6f1f7e92-d158-4e5a-939a-7a18b7db86d2) from Async(default) in 39.52ms
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 105ms (Views: 98.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e74bb760bef305ad6e720c0b831430a6147aea5c/kids.jpg" for 127.0.0.1 at 2022-02-21 20:00:43 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e74bb760bef305ad6e720c0b831430a6147aea5c", "filename"=>"kids"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: p6ohuW585u1WcQqpLPJbQMQe (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRFp2YUhWWE5UZzFkVEZYWTFGeGNFeFFTbUpSVFZGbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlhMmxrY3k1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMnRwWkhNdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA1OjQzLjM3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1bebf7c6fb17da8e8b27c441b72e7cc0c0bc8427/kids.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22kids.jpg%22%3B+filename%2A%3DUTF-8%27%27kids.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRFp2YUhWWE5UZzFkVEZYWTFGeGNFeFFTbUpSVFZGbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlhMmxrY3k1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMnRwWkhNdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA1OjQzLjM3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1bebf7c6fb17da8e8b27c441b72e7cc0c0bc8427/kids.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22kids.jpg%22%3B+filename%2A%3DUTF-8%27%27kids.jpg
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRFp2YUhWWE5UZzFkVEZYWTFGeGNFeFFTbUpSVFZGbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlhMmxrY3k1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMnRwWkhNdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA1OjQzLjM3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1bebf7c6fb17da8e8b27c441b72e7cc0c0bc8427/kids.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22kids.jpg%22%3B+filename%2A%3DUTF-8%27%27kids.jpg" for 127.0.0.1 at 2022-02-21 20:00:43 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:00:43 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"kids.jpg\"; filename*=UTF-8''kids.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRFp2YUhWWE5UZzFkVEZYWTFGeGNFeFFTbUpSVFZGbEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlhMmxrY3k1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMnRwWkhNdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA1OjQzLjM3N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--1bebf7c6fb17da8e8b27c441b72e7cc0c0bc8427", "filename"=>"kids"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/services/destroy/17" for 127.0.0.1 at 2022-02-21 20:00:53 +0300
+Processing by ServiceController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ntIzOirHpP3MD8aPTCUbzT1uXDwIM17ASmL409AIIXk7qJbod/0VRGWei+wWCltqSwp93YKXhhyieoIM6FkKIg==", "id"=>"17"}
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" WHERE "services"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/service_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:13
+  [1m[36mService Destroy (0.2ms)[0m  [1m[31mDELETE FROM "services" WHERE "services"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/service_controller.rb:13
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:13
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 17], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/controllers/service_controller.rb:13
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/service_controller.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:13
+  [1m[36mActiveStorage::Attachment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/service_controller.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:13
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 5c7bd2bd-276f-4d8b-a0c2-0027df56ab50) to Async(default) with arguments: #<GlobalID:0x00007f8d715824f0 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/3>>
+Redirected to http://localhost:3000/services
+Completed 302 Found in 22ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:00:53 +0300
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50] Performing ActiveStorage::PurgeJob (Job ID: 5c7bd2bd-276f-4d8b-a0c2-0027df56ab50) from Async(default) with arguments: #<GlobalID:0x00007f8d715b9a68 @uri=#<URI::GID gid://music-world/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by ServiceController#index as HTML
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (2.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50]   ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: p6ohuW585u1WcQqpLPJbQMQe[0m
+  ↳ app/views/service/index.html.erb:21
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50] [36m  Disk Storage (0.1ms) [0m[31mDeleted files by key prefix: variants/p6ohuW585u1WcQqpLPJbQMQe/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5c7bd2bd-276f-4d8b-a0c2-0027df56ab50] Performed ActiveStorage::PurgeJob (Job ID: 5c7bd2bd-276f-4d8b-a0c2-0027df56ab50) from Async(default) in 21.49ms
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 88ms (Views: 82.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:00:54 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA0OjMwLjM2M1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--2982e4b56631bcfd98f7c4cf30a6ea45078fd430", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/unit/edit/14" for 127.0.0.1 at 2022-02-21 20:00:57 +0300
+Processing by UnitController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/unit_controller.rb:53
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "units" does not exist
+LINE 8:                WHERE a.attrelid = '"units"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"units"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/unit_controller.rb:24:in `edit'
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:01:01 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--26b5c01d2aebb345c12eae13e37a2897776d980d/dota.jpg" for 127.0.0.1 at 2022-02-21 20:01:02 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--26b5c01d2aebb345c12eae13e37a2897776d980d", "filename"=>"dota"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/lain/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: JmG4hLaa2YbykWZf8kQFaVsG (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:01:02 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:01:46 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 20:01:47 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  Rendered answer/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:01:48 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:01:49 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:01:50 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 20:01:52 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 80ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2022-02-21 20:01:54 +0300
+Processing by PagesController#contacts_send as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NwVO3kuy73L5GBAOE9ShVgGAI8rSyQ6o3y2Mlj85Q8JFvYetGslT8P+hJ9nv/Jzf+GOYRnSrpfw/dEx96Yvog==", "question"=>{"body"=>"asdfasdfasdfsdfaasdfasdfasdf"}, "commit"=>"Отправить"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pages_controller.rb:40
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("body", "status", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "asdfasdfasdfsdfaasdfasdfasdf"], ["status", "waiting"], ["user_id", 3], ["created_at", "2022-02-21 17:01:54.136820"], ["updated_at", "2022-02-21 17:01:54.136820"]]
+  ↳ app/controllers/pages_controller.rb:40
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pages_controller.rb:40
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 9ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 20:01:54 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:01:55 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  Rendered pages/questions.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 20:01:56 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/answer/index.html.erb:12
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/answer/index.html.erb:12
+  Rendered answer/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2022-02-21 20:01:57 +0300
+Processing by AnswerController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IPK0VDAwv5GzV13Aa8U1jXrwjEExQVPbfdPUb1LJxWLZ+oOW9YwvXcFFCPZHrMgRoE5BaH7uqiNJUqmPnLiq7A==", "question"=>{"answer"=>"sdfaasdfasdf", "question_id"=>"2"}, "commit"=>"Ответить"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[36mQuestion Update (0.3ms)[0m  [1m[33mUPDATE "questions" SET "answer" = $1, "status" = $2, "updated_at" = $3 WHERE "questions"."id" = $4[0m  [["answer", "sdfaasdfasdf"], ["status", "answered"], ["updated_at", "2022-02-21 17:01:57.979206"], ["id", 2]]
+  ↳ app/controllers/answer_controller.rb:11
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/answer_controller.rb:11
+Redirected to http://localhost:3000/answers
+Completed 302 Found in 13ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 20:01:57 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  Rendered answer/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:01:58 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2[0m  [["status", "answered"], ["user_id", 3]]
+  ↳ app/views/pages/questions.html.erb:17
+  Rendered pages/questions.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:02:10 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 20:02:10 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 20:02:13 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 20:02:17 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers" for 127.0.0.1 at 2022-02-21 20:02:18 +0300
+Processing by AnswerController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/answer_controller.rb:24
+  Rendering answer/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1[0m  [["status", "waiting"]]
+  ↳ app/views/answer/index.html.erb:9
+  Rendered answer/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 20:02:18 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_nav.html.erb (12.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:02:27 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2[0m  [["status", "answered"], ["user_id", 3]]
+  ↳ app/views/pages/questions.html.erb:17
+  Rendered pages/questions.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_flash.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 72ms (Views: 67.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:02:28 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:02:29 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 20:02:47 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:02:48 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2[0m  [["status", "answered"], ["user_id", 3]]
+  ↳ app/views/pages/questions.html.erb:17
+  Rendered pages/questions.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:02:49 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:02:52 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:02:52 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 20:03:09 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered service/new.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (5.4ms)
+  Rendered layouts/_flash.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:13 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F84m1t41FXN1U8ZHC/eKbtdnfacheLmAJNXnlQN3IeazfZsZ9qs7cmqHiiZiWIIm+LUTfd2XqsETc+dxHJAm6A==", "service"=>{"name"=>"afdasdfasdfasdf", "description"=>"asdfasdfasdfasdf", "price"=>"42334"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "afdasdfasdfasdf"], ["description", "asdfasdfasdfasdf"], ["price", 42334], ["created_at", "2022-02-21 17:03:13.520383"], ["updated_at", "2022-02-21 17:03:13.520383"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+Redirected to http://localhost:3000/services
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:03:13 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:03:13 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 20:03:17 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered service/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:21 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hx/qLiTheQapa+xdVuEK57ukiMlgkRTx8Fwmcbyk3nq7rFfhDH9XB7a/oDw/TgKvlHbmE5x+B7DH+iaVo0PZdA==", "service"=>{"name"=>"asdfdsafsdafsad", "description"=>"asdfasdfsadf", "price"=>"5534"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/service_controller.rb:24
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered service/new.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:24 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FV/O2kPjf5Ode2FD3NpzNsk7UNcwyh+UOiCfzQqBNZewJWsIHtnOKjTqLCCG9TORv19xNrpux0jSOOUSMtAezA==", "service"=>{"name"=>"asdfdsafsdafsad", "description"=>"asdfasdfsadffsdfdssdf", "price"=>"5534"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "asdfdsafsdafsad"], ["description", "asdfasdfsadffsdfdssdf"], ["price", 5534], ["created_at", "2022-02-21 17:03:24.296379"], ["updated_at", "2022-02-21 17:03:24.296379"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+Redirected to http://localhost:3000/services
+Completed 302 Found in 10ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:03:24 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 19], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:03:24 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 20:03:34 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered service/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:38 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hyrYQrtm/MWVjCkY+RKZ3jjeTMEtkgu8ID8dQIV2ZjcjmWWNk/jSxIpYZXmQvZGWFwwiG9F9GP0XmR2kmpFhOQ==", "service"=>{"name"=>"fasdasdfasdf", "description"=>"asdfsdfsdf", "price"=>"543"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/service_controller.rb:24
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered service/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:42 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5Ft2P0I7qdYBHkp4lvWiknmVG63dprUVQZkhYrtQ30a68gKoDJfHvGVNEq4dJYtP4J1jz3SQgi9Hh5asrxoJg==", "service"=>{"name"=>"fasdasdfasdffsdsdf", "description"=>"asdfsdfsdfsdfsdfv", "price"=>"543"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "fasdasdfasdffsdsdf"], ["description", "asdfsdfsdfsdfsdfv"], ["price", 543], ["created_at", "2022-02-21 17:03:42.116956"], ["updated_at", "2022-02-21 17:03:42.116956"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+Redirected to http://localhost:3000/services
+Completed 302 Found in 7ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:03:42 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 19], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 20], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:03:42 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 20:03:44 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered service/new.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:47 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nYxdw1d86MBTlXpc5j9TLryZQxziiI6DQttHhy68hag5P+AMf+LGwUxBNj2PkFtmk0stxh5nncJ1fUdjMVuCpg==", "service"=>{"name"=>"gasdfgsdfgsdfgsgsdfg", "description"=>"sdfgsdfgggsdsdfgsdfg", "price"=>"324"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.6ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "gasdfgsdfgsdfgsgsdfg"], ["description", "sdfgsdfgggsdsdfgsdfg"], ["price", 324], ["created_at", "2022-02-21 17:03:47.533417"], ["updated_at", "2022-02-21 17:03:47.533417"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+Redirected to http://localhost:3000/services
+Completed 302 Found in 9ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:03:47 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 19], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 20], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 21], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "services"[0m
+  ↳ app/views/service/index.html.erb:54
+  Rendered service/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 91ms (Views: 87.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:03:47 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services/new" for 127.0.0.1 at 2022-02-21 20:03:48 +0300
+Processing by ServiceController#new as HTML
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered service/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:52 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TTgYwrDpM2QKflt+AQN3CBIYp/r2sEaQoryu3gopvAzpi6UNmHcdZRWqFx9orH9APcrJIApfVdGVGq46Fc67Ag==", "service"=>{"name"=>"23gdfgsdffgsdf", "description"=>"sdfgsdfgsdfgsdfg", "price"=>"234"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/service_controller.rb:24
+  Rendering service/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered service/new.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_flash.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/services/new" for 127.0.0.1 at 2022-02-21 20:03:55 +0300
+Processing by ServiceController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1bbNZQbs9jywamVoFmKYYSCjjSCgbO0bOq8TyeQNObhwzGi3W9ZHhRn7KAtMTdjGVseswSrINcfSt2kW3FwS4w==", "service"=>{"name"=>"23gdfgsdffgsdfsdfggfdsdfg", "description"=>"sdfgsdfgdfgssdfgsdfgsdfgsdfg", "price"=>"234"}, "commit"=>"Создать\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/service_controller.rb:24
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "23gdfgsdffgsdfsdfggfdsdfg"], ["description", "sdfgsdfgdfgssdfgsdfgsdfgsdfg"], ["price", 234], ["created_at", "2022-02-21 17:03:55.918899"], ["updated_at", "2022-02-21 17:03:55.918899"]]
+  ↳ app/controllers/service_controller.rb:24
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/service_controller.rb:24
+Redirected to http://localhost:3000/services
+Completed 302 Found in 11ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-02-21 20:03:55 +0300
+Processing by ServiceController#index as HTML
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 0]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 13], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 14], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 15], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 16], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 18], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 19], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 20], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 21], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "services"[0m
+  ↳ app/views/service/index.html.erb:54
+  Rendered service/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 78ms (Views: 74.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef/dota.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22dota.jpg%22%3B+filename%2A%3DUTF-8%27%27dota.jpg" for 127.0.0.1 at 2022-02-21 20:03:56 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"dota.jpg\"; filename*=UTF-8''dota.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRTbTFITkdoTVlXRXlXV0o1YTFkYVpqaHJVVVpoVm5OSEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSTdhVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlaRzkwWVM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMlJ2ZEdFdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIyLTAyLTIxVDE3OjA2OjAyLjA5N1oiLCJwdXIiOiJibG9iX2tleSJ9fQ==--6bbbab65f7d3636f58a1e6e4c74e8204478c5fef", "filename"=>"dota"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/services?page=2" for 127.0.0.1 at 2022-02-21 20:03:59 +0300
+Processing by ServiceController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering service/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:7
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT  "services".* FROM "services" LIMIT $1 OFFSET $2[0m  [["LIMIT", 9], ["OFFSET", 9]]
+  ↳ app/views/service/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 22], ["record_type", "Service"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/service/index.html.erb:21
+  Rendered service/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 20:04:07 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (4.1ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 20:04:09 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2022-02-21 20:04:59 +0300
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/contacts.html.erb:47
+  Rendered pages/contacts.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-21 20:05:00 +0300
+Processing by PagesController#main as HTML
+  Rendering pages/main.html.erb within layouts/application
+  Rendered pages/main.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_nav.html.erb:22
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (6.4ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 20:05:10 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 129ms (Views: 126.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2022-02-21 20:05:11 +0300
+Processing by PagesController#questions as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:83
+  Rendering pages/questions.html.erb within layouts/application
+  [1m[36mQuestion Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2 LIMIT $3[0m  [["status", "answered"], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/questions.html.erb:1
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."status" = $1 AND "questions"."user_id" = $2[0m  [["status", "answered"], ["user_id", 3]]
+  ↳ app/views/pages/questions.html.erb:17
+  Rendered pages/questions.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/reviews" for 127.0.0.1 at 2022-02-21 20:05:11 +0300
+Processing by PagesController#reviews as HTML
+  Rendering pages/reviews.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews"[0m
+  ↳ app/views/pages/reviews.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/reviews.html.erb:65
+  Rendered pages/reviews.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_flash.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 78ms (Views: 75.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile/update" for 127.0.0.1 at 2022-02-21 20:06:23 +0300
+Processing by ProfileController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/profile_controller.rb:28
+  Rendering profile/update.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/views/profile/update.html.erb:15
+  Rendered profile/update.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_flash.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.5ms)
+
+
