@@ -1,6 +1,6 @@
 class ServiceController < ApplicationController
-  before_action :require_user, only: [:index,  :new, :create, :edit, :update, :destroy]
-  before_action :need_admin, only: [:index,  :new, :create, :edit, :update, :destroy]
+  before_action :require_user, only: [  :new, :create, :edit, :update, :destroy]
+  before_action :need_admin, only: [  :new, :create, :edit, :update, :destroy]
 
   def index
     @services = Service.paginate(:page => params[:page], :per_page => 9)

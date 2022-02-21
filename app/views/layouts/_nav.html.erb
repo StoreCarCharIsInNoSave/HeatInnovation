@@ -21,6 +21,7 @@
   <%= link_to 'Отзывы', pages_reviews_path, class: 'item' %>
   <% if user_signed_in? %>
     <%= link_to "Ваши вопросы", questions_path, class: 'item' %>
+    <%= link_to "Услуги", services_path, class: 'item' %>
     <% if current_user.is_admin? %>
       <%= link_to "Вопросы", answers_path, class: 'item' %>
     <% end %>
