@@ -36,7 +36,7 @@
 
           <% if current_user && current_user.admin? %>
           <div class="extra content">
-            <%= link_to 'Изменить', unit_edit_path(u), class: 'ui secondary button' %>
+            <%= link_to 'Изменить', edit_service_path(u), class: 'ui secondary button' %>
             <%= link_to 'Удалить', destroy_service_path(u), class: 'ui secondary button', style: 'margin-top:10px', method: :delete %>
           </div>
           <% end %>
