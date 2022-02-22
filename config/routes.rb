@@ -31,4 +31,13 @@ Rails.application.routes.draw do
   post 'services/new', to: 'service#create'
   post 'services/edit/:id', to: 'service#update', as: 'update_service'
   get 'services/edit/:id', to: 'service#edit', as: 'edit_service'
+
+
+  get 'workers/', to: 'workers#index'
+  get 'workers/new', to: 'workers#new'
+  delete 'workers/destroy/:id', to: 'workers#destroy', as: 'destroy_worker'
+  post 'workers/new', to: 'workers#create'
+  post 'workers/edit/:id', to: 'workers#update', as: 'update_worker'
+  get 'workers/edit/:id', to: 'workers#edit', as: 'edit_worker'
+
 end

@@ -1,0 +1,41 @@
+<h2 class="ui center aligned icon header">
+  <div class="top-slogan-handler">
+    <%= image_tag('workers.png', class: 'top-slogan-image') %>
+    <h1 class="slogan" style="margin-left: 15px">Создание нового сотрудника</h1>
+  </div>
+</h2>
+<div class="center-my ">
+  <%= form_for :worker do |f|  %>
+
+    <div class="ui segment profile ">
+      <%=render 'devise/shared/error_messages', resource: @worker %>
+
+      <div class="ui form ">
+        <div class="avatar-handler">
+          <%= image_tag('pim.png', class: 'avatar-serv') %>
+        </div>
+        <div class="field">
+          <%=f.label 'Загрузить фото', class:'ui secondary button pick-image-button' %>
+          <label for="">
+          <span style="display: none">
+             <%=f.file_field 'Загрузить фото'%>
+          </span>
+          </label>
+        </div>
+        <div class="field">
+          <%= f.label 'ФИО сотрудника' %>
+          <%= f.text_field :name, placeholder: 'ФИО сотрудника', class:'data-input'  %>
+        </div>
+        <div class="field">
+          <%= f.label "Почта" %>
+          <%= f.text_field :email, placeholder: 'Почта', class:'data-input'  %>
+        </div>
+        <div class="field">
+          <%= f.label "Должность" %>
+          <%= f.text_field :position, placeholder: 'Стоимость', class:'data-input'  %>
+        </div>
+        <%= f.submit "Создать", class: 'ui button secondary'%>
+      </div>
+    </div>
+  <% end %>
+</div>

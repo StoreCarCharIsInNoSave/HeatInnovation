@@ -1,0 +1,62 @@
+
+<h2 class="ui center aligned icon header">
+  <div class="top-slogan-handler">
+    <%= image_tag('workers.png', class: 'top-slogan-image') %>
+    <h1 class="slogan" style="margin-left: 15px">Список работников</h1>
+  </div>
+  <% if current_user && current_user.admin? %>
+    <div style="margin-top: 10px">
+      <%= link_to 'Добавить нового сотрудника', workers_new_path, class: 'ui green button' %>
+    </div>
+  <% end %>
+</h2>
+
+
+<div class="services">
+  <% @workers.each do |u| %>
+
+    <div class="unit-solo-handler">
+      <div class="ui card">
+        <div class="image">
+          <% if u.image.attached? %>
+            <%= image_tag(u.image, class: 'unit-image') %>
+          <% else %>
+            <%= image_tag('pim.png', class: 'unit-image') %>
+          <% end %>
+        </div>
+        <div class="content unit-desc-handler">
+          <a class="header"><%= u.name %></a>
+          <div class="meta">
+            <span class="date"><%= u.position %></span>
+          </div>
+          <div class="unit-description">
+            <%= u.email %>
+          </div>
+        </div>
+
+        <% if current_user && current_user.admin? %>
+          <div class="extra content">
+            <%= link_to 'Изменить', edit_worker_path(u), class: 'ui secondary button' %>
+            <%= link_to 'Удалить', destroy_worker_path(u), class: 'ui secondary button', style: 'margin-top:10px', method: :delete %>
+          </div>
+        <% end %>
+
+      </div>
+
+
+    </div>
+
+
+  <% end %>
+</div>
+
+<div class="unit-show-content">
+  <%= will_paginate @workers %>
+</div>
+
+
+
+
+
+
+
