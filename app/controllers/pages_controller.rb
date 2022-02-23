@@ -14,6 +14,10 @@ class PagesController < ApplicationController
     @question = Question.new
   end
 
+  def about_us
+
+  end
+
   def destroy_question
     @question = Question.find(params[:id])
     unless @question.user==current_user

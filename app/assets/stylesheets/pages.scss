@@ -35,7 +35,45 @@
   border-radius: 10px;
   padding: 10px;
 }
+.rounded{
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9ff44;
+}
+.rounded-img{
 
+  width: 80px;
+  height: 80px;
+}
+.roundeds{
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+.roundeds .notfirst{
+  margin-left: 50px;
+}
+.rounded-handler{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+
+}
+
+.answer-img-round{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.center-text{
+  text-align: center;
+}
 .rounded-comment {
   border: 2px solid #252525 !important;
   border-radius: 20px;

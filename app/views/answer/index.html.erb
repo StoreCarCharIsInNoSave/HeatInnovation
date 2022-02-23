@@ -10,7 +10,7 @@
       <%= form_for(:question, :html => {:class => 'card'}) do |f| %>
         <div class="content">
           <% if question.user.avatar.attached? %>
-            <%= image_tag(question.user.avatar, class: 'right floated mini ui image') %>
+            <%= image_tag(question.user.avatar, class: 'right floated mini ui image answer-img-round') %>
           <% else %>
             <%= image_tag('profile.png', class: 'right floated mini ui image') %>
           <% end %>

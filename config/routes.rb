@@ -39,5 +39,5 @@ Rails.application.routes.draw do
   post 'workers/new', to: 'workers#create'
   post 'workers/edit/:id', to: 'workers#update', as: 'update_worker'
   get 'workers/edit/:id', to: 'workers#edit', as: 'edit_worker'
-
+  get 'about/', to: 'pages#about_us'
 end

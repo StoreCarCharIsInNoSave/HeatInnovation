@@ -76,8 +76,9 @@ body {
     position: fixed;
     left: 0px !important;
     bottom: 0px !important;
-    height: 100px !important;
+    height: 60px !important;
     width: 100% !important;
+    border-top: 1px solid #757575;
 }
 
 .right-btn {
