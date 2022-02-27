@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  before_action :user_authorized?, only: [:new_review, :contacts_send, :questions, :destroy_question]
-  before_action :user_admin?, only: [:destroy]
+  before_action :user_authorized?, only: [:new_review, :contacts_send, :questions, :destroy_question, :reviews_moderation, :reviews_moderation_send]
+  before_action :user_admin?, only: [:destroy, :reviews_moderation, :reviews_moderation_send]
 
   def main
 
@@ -50,8 +50,22 @@ class PagesController < ApplicationController
   end
 
   def reviews
-    @reviews = Review.paginate(page: params[:page], per_page: 10)
+    @reviews = Review.where(status: "confirmed").paginate(page: params[:page], per_page: 10)
     cookies[:rating] = 0
+  end
+  def reviews_moderation
+    @reviews = Review.where(status: "pending").paginate(page: params[:page], per_page: 10)
+  end
+  def reviews_moderation_send
+    review = Review.find_by(id:params[:r][:review_id])
+    review.status = "confirmed"
+    if review.save
+      flash[:notice] = "Отзыв успешно подтвержден"
+      redirect_to reviews_moderation_path
+    else
+      flash[:alert] = "Ошибка подтверждения отзыва"
+      redirect_to reviews_moderation_path
+    end
   end
 
   def destroy
@@ -69,7 +83,7 @@ class PagesController < ApplicationController
     review = Review.new(mark: cookies[:rating], comment: params[:review][0])
     review.user = current_user
     if review.save
-      flash[:notice] = "Отзыв успешно добавлен"
+      flash[:notice] = "Отзыв отправлен на модерацию"
       redirect_to pages_reviews_path
     else
       flash[:alert] = "Ошибка добавления отзыва"
@@ -92,7 +106,7 @@ class PagesController < ApplicationController
 
   def user_admin?
     unless current_user.admin?
-      flash[:alert] = "Для удаления отзыва необходимо быть администратором"
+      flash[:alert] = "Для данного действия необходимо быть администратором"
       redirect_to root_path
     end
   end

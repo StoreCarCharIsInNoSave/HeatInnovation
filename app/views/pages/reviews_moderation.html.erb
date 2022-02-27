@@ -1,0 +1,41 @@
+<h2 class="ui center aligned icon header">
+  <div class="top-slogan-handler">
+    <%= image_tag('rating.png', class: 'top-slogan-image') %>
+    <h1 class="slogan" style="margin-left: 15px">Отзывы от пользователей</h1>
+  </div>
+</h2>
+<div class="center-my ">
+  <div class="ui cards col">
+    <% @reviews.each do |r| %>
+      <%= form_for(:r, :html => {:class => 'card'}) do |f| %>
+        <div class="content">
+          <% if r.user.avatar.attached? %>
+            <%= image_tag(r.user.avatar, class: 'right floated mini ui image answer-img-round') %>
+          <% else %>
+            <%= image_tag('profile.png', class: 'right floated mini ui image') %>
+          <% end %>
+          <div class="header">
+            <%= r.user.email.split('@')[0] %>
+          </div>
+          <div class="meta">
+            <%= r.created_at.strftime("Создан %m/%d/%Y  %I:%M%p") %>
+          </div>
+          <div class="description question-text">
+            <%= r.comment %>
+            <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
+
+          </div>
+        </div>
+        <div class="ui input answer-input-handler ">
+          <%= f.hidden_field :review_id, value: r.id %>
+        </div>
+        <div class="extra content answer-content">
+          <div class="ui two buttons">
+            <%= f.submit "Разрешить", class: 'ui basic green button'%>
+            <%= link_to "Удалить", destroy_review_path(r), class: 'ui basic red button', method: :delete %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

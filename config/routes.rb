@@ -40,4 +40,6 @@ Rails.application.routes.draw do
   post 'workers/edit/:id', to: 'workers#update', as: 'update_worker'
   get 'workers/edit/:id', to: 'workers#edit', as: 'edit_worker'
   get 'about/', to: 'pages#about_us'
+  get 'reviews/moderation', to: 'pages#reviews_moderation'
+  post 'reviews/moderation', to: 'pages#reviews_moderation_send'
 end
