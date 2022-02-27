@@ -21,7 +21,9 @@
             <%= r.created_at.strftime("Создан %m/%d/%Y  %I:%M%p") %>
           </div>
           <div class="description question-text">
-            <%= r.comment %>
+            <div>
+              <%= r.comment %>
+            </div>
             <div class="ui star rating user-rating" data-max-rating="5" data-rating="<%= r.mark %>"></div>
 
           </div>
