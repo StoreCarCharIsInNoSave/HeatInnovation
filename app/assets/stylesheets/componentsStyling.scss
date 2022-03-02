@@ -1,3 +1,10 @@
 .data-input{
   background-color: #e0e0e0 !important;
 }
+
+body {
+  background-image: url(image-path("/assets/back.jpg")) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}

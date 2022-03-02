@@ -17,8 +17,17 @@
     <%= link_to "Ваши вопросы", questions_path, class: 'item' %>
 
     <% if current_user.is_admin? %>
-      <%= link_to "Вопросы", answers_path, class: 'item' %>
-      <%= link_to "Модерация отзывов",  reviews_moderation_path, class: "item" %>
+      <div class="right menu">
+        <div class="ui dropdown item" style="color: red">
+          Админ панель
+          <div class="menu">
+            <%= link_to "Вопросы", answers_path, class: 'item' %>
+            <%= link_to "Модерация отзывов",  reviews_moderation_path, class: "item" %>
+            <%= link_to "Модерация списка услуг", services_path, class: "item" %>
+            <%= link_to "Модерация списка работников", workers_path, class: "item" %>
+          </div>
+        </div>
+
     <% end %>
   <% end %>
 
@@ -35,7 +44,6 @@
     <% else %>
       <div class="item">
         <% if current_user.admin? %>
-
           <h1 class="">
             <%= image_tag('crown.png', class: 'admin-crown') %>
             <%= link_to current_user.email.split('@')[0], profile_update_path, class: 'profile-login admin-profile' %>
@@ -49,7 +57,7 @@
         <%= link_to "Деавторизация", destroy_user_session_path, :method => :delete, class: 'ui secondary button' %>
       </div>
     <% end %>
-
+  </div>
   </div>
 
 </div>

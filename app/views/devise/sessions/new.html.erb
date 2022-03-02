@@ -15,7 +15,7 @@
         </div>
         <div class="field">
           <%= f.label :password %>
-          <%= f.text_field :password, placeholder: 'Password', class:'data-input' %>
+          <%= f.text_field :password, type:'password', placeholder: 'Password', class:'data-input' %>
         </div>
         <%= f.submit "Войти", class: 'ui button secondary'%>
         <%= render "devise/shared/links" %>

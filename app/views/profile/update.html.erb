@@ -32,11 +32,11 @@
       </div>
       <div class="field">
         <%= f.label :password %>
-        <%= f.text_field :password, placeholder: 'Пароль', class:'data-input'  %>
+        <%= f.text_field :password, type:'password', placeholder: 'Пароль', class:'data-input'  %>
       </div>
       <div class="field">
         <%= f.label :password_confirmation %>
-        <%= f.text_field :password_confirmation, placeholder: 'Повторите пароль', class:'data-input'  %>
+        <%= f.text_field :password_confirmation, type:'password', placeholder: 'Повторите пароль', class:'data-input'  %>
       </div>
       <%= f.submit "Изменить", class: 'ui button secondary'%>
     </div>

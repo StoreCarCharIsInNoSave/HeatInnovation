@@ -18,13 +18,15 @@
     font-family: Lato;
     src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 }
-
-body {
-    background-image: url("/assets/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+@font-face{
+    font-family: 'com';
+    src: url('/assets/com');
 }
+
+*:not(i){
+    font-family: 'com' !important;
+}
+
 
 .flex-next {
     display: none !important;
@@ -260,6 +262,8 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
+
+
 
 .top-slogan-handler {
     display: flex;
